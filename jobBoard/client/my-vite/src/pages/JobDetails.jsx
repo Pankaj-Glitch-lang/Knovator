@@ -6,12 +6,21 @@ const baseUrl = import.meta.env.VITE_HOST_URL;
 const JobDetails = () => {
     const { id } = useParams();
     const [job, setJob] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`${baseUrl}/api/jobs/${id}`).then(res => setJob(res.data));
+        axios.get(`${baseUrl}/api/jobs/${id}`)
+            .then(res => setJob(res.data))
+            .finally(() => setLoading(false));
     }, [id]);
 
-    if (!job) return <div className="container">Loading...</div>;
+    if (loading) {
+        return (
+            <div className="container spinner-container">
+                <div className="spinner"></div>
+            </div>
+        );
+    }
 
     return (
         <div className="container">
