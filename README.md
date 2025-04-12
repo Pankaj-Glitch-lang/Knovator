@@ -51,6 +51,9 @@ npm install
 
 🔗 Backend (Render): https://knovator-7h9d.onrender.com
 
+To access api please use the route : /api/jobs
+
+
 
 
 
