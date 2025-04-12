@@ -14,7 +14,7 @@ A simple full-stack job board where users can:
 
 - **Frontend**: React.js + CSS  
 - **Backend**: Node.js + Express.js  
-- **Database**: MongoDB (Local or Atlas)
+- **Database**: MongoDB (Atlas)
 
 ---
 
@@ -30,6 +30,31 @@ knovator/ └── jobBoard/ ├── client/ # React frontend └── serve
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/kovator.git
+git clone https:https://github.com/Pankaj-Glitch-lang/Knovator.git
 cd jobBoard
+```
+## 2. Backend Setup (server)
+```
+  cd server
+  npm install
+  npm run start
+```
+
+## 3. Frontend Setup 
+```
+cd ../client
+npm install
+
+```
+## 4. 🌍 Deployment Links
+🔗 Frontend (Netlify): https://dainty-croissant-fcf2bd.netlify.app/
+
+🔗 Backend (Render): https://knovator-7h9d.onrender.com
+
+
+
+
+
+
+
 
